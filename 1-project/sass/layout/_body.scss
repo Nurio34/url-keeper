@@ -1,0 +1,57 @@
+
+:root {
+    --body : white;
+}
+
+:root:has(body.night) {
+    --body : black;
+}
+
+body {
+    background-color: red;
+    display: grid;
+    justify-items: stretch;
+    align-content: start;
+    gap: 1rem
+    ;
+    padding: 1rem;
+
+    .addBtn {
+        padding: 0.2rem 0.6rem;
+        border-radius: 0.6rem;
+    }
+
+    .list {
+        background-color: white;
+        border-radius: 0.6rem;
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.2rem 0.6rem;
+
+            img {
+                height: 1.6rem;
+            }
+
+            li {
+
+                a {
+
+                }
+            }
+
+            .updateBtn {
+                margin-inline-start: auto;
+            }
+
+            .updateBtn,
+            .deleteBtn {
+                border-radius: 0.2rem;
+                padding: 0.2rem 0.6rem;
+            }
+        }
+        
+    }
+}
